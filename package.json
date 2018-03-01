@@ -1,0 +1,25 @@
+{
+  "name": "react-suspense-demo-market-news",
+  "version": "1.0.0",
+  "description": "Playing around with React suspense",
+  "keywords": ["react", "suspense", "future"],
+  "homepage": "https://codesandbox.io/s/new",
+  "main": "src/index.js",
+  "dependencies": {
+    "glamor": "2.20.40",
+    "history": "latest",
+    "path-to-regexp": "2.1.0",
+    "react": "16.4.0-alpha.0911da3",
+    "react-dom": "16.4.0-alpha.0911da3",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.1.0",
+    "simple-cache-provider": "0.3.0-alpha.0911da3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

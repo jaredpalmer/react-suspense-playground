@@ -1,6 +1,9 @@
 import React from 'react';
 import { createBrowserHistory } from 'history';
 import { matchPath } from './matchPath';
+
+import Component from './Component';
+
 const RouterContext = React.createContext(null);
 
 export const withRouter = Comp => props => (
@@ -9,7 +12,7 @@ export const withRouter = Comp => props => (
   </RouterContext.Consumer>
 );
 
-export class Router extends React.Component {
+export class Router extends Component {
   history = createBrowserHistory();
 
   state = {
@@ -18,7 +21,7 @@ export class Router extends React.Component {
 
   componentDidMount() {
     this.history.listen(() => {
-      this.setState({
+      this.deferSetState({
         location: this.history.location,
       });
     });
